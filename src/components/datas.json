@@ -1,0 +1,12 @@
+[
+	{
+		"cantidad": 1,
+		"producto": "Té",
+		"value": "$25.00"
+	},
+	{
+		"cantidad": 3,
+		"producto": "Chips",
+		"value": "$25.00"
+	}
+]

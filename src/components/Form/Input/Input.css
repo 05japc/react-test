@@ -1,0 +1,395 @@
+
+.input_custom_group {
+  position: relative;
+  border-radius: 8px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  height: 60px;
+  overflow: hidden;
+
+}
+
+.input_custom_group_wrapper {
+  position: relative;
+
+}
+
+.input_custom_group.error {
+  margin-bottom: 33px !important;
+}
+
+.input_custom_group .icon{
+  vertical-align: middle;
+  position: absolute;
+  right: 18px;
+  top: calc(50% - 15px);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.input_custom_group .line{
+  position: absolute;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 0px;
+  border-radius: 8px;
+  border: 1px solid #E8E9EB;
+  transition: 200ms ease all;
+}
+
+.input_custom_group.error .line{
+  border: 1px solid #D32121;
+}
+
+.input_custom_group input{
+  background: none;
+  color: #181A36;
+  font-size: 16px;
+  display: block;
+  border-radius: 8px;
+  position: absolute;
+  height: 80%;
+  width: 95%;
+  z-index: 1;
+  border: none;
+  bottom: 0px;
+  padding-left: 16px;
+  padding-top: 13px;
+  transition: 200ms ease all;
+  padding-right: 35px;
+  font-family: "AvertaStandard-Semibold";
+}
+
+@media (max-width: 800px) {
+  .input_custom_group input{
+    font-size: 14px;
+  }
+}
+
+.input_custom_group input:focus {
+  outline: none;
+
+}
+.input_custom_group input:focus ~ label{
+  top: 8px;
+  font-size: 14px;
+  color: #FC4C02 !important;
+  left: 16px;
+
+}
+
+@media (max-width: 800px){
+  .input_custom_group input:focus ~ label{
+    font-size: 12px;
+
+  }
+}
+
+.input_custom_group.error input:focus ~ label{
+  color: #D32121 !important;
+
+}
+
+.input_custom_group.fill label{
+  top: 8px;
+  font-size: 14px;
+  color: #5E5F73;
+  left: 16px;
+
+}
+@media (max-width: 800px){
+  .input_custom_group.fill label{
+    font-size: 12px;
+  }
+}
+
+.input_custom_group.fill .icon{
+
+
+}
+
+.input_custom_group input:focus ~ .line{
+  border: 1px solid #FC4C02 !important;
+}
+
+.input_custom_group.fill .line{
+    border: 1px solid #E8E9EB;
+  }
+
+.input_custom_group.error .line{
+  border: 1px solid #D32121 !important;
+}
+
+.input_custom_group input[type=password] {
+  letter-spacing: 0.3em;
+}
+
+.input_custom_group label {
+  color: #5E5F73;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 16px;
+  top: 22px;
+  transition: 200ms ease all;
+  z-index: 1;
+  font-family: "AvertaStandard-Semibold";
+}
+
+@media (max-width: 800px) {
+  .input_custom_group label {
+    font-size: 14px;
+  }
+}
+
+
+.input_custom_group.error label {
+  color: #D32121;
+  transition: 200ms ease all;
+}
+
+
+.input_custom_group_wrapper .errorMesage{
+  position: absolute;
+  bottom: -20px;
+  font-size: 14px;
+  left: 0px;
+  font-family: 'AvertaStandard-Semibold';
+  color:#D32121 !important;
+
+
+}
+
+@media (max-width: 800px){
+  .input_custom_group_wrapper{
+    margin-left: 16px !important;
+    margin-right: 16px;
+
+  }
+}
+
+.input_custom_group .errorMesage{
+  position: absolute;
+  bottom: -20px;
+  font-size: 14px;
+  left: 0px;
+  font-family: 'AvertaStandard-Semibold';
+  color:#D32121 !important;
+
+}
+
+.errorMesageG {
+  font-size: 14px !important;
+  text-align: start;
+  display: block;
+  margin-top: 5px !important;
+  margin-left: 0px;
+  font-family: 'AvertaStandard-Semibold';
+  color:#D32121 !important;
+}
+
+
+.checkbox_custom_group{
+  position: relative;
+  border-radius: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 60px;
+  width: 100%;
+  text-align: start;
+  height: 35px;
+  line-height: 40px;
+}
+
+
+.checkbox_custom_group .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #5E5F73;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox_custom_group .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox_custom_group .checkmark {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #BABBC3;
+  border-radius: 4px;
+  margin: initial !important;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_custom_group .container:hover input ~ .checkmark {
+  background-color: #f6f6f6;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_custom_group .container input:checked ~ .checkmark {
+  background-color: #FC4C02;
+  border: 2px solid #FC4C02;
+  border-radius: 4px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox_custom_group .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_custom_group .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_custom_group .container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+.MuiFormControl-root{
+  margin-top: 8px !important;
+  margin-bottom: 0px !important;
+}
+
+.MuiOutlinedInput-root fieldset {
+  border-radius: 8px;
+  border: 1px solid #E8E9EB;
+  border-width: 1px !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused fieldset{
+  border: 1px solid #FC4C02;
+  border-color: #FC4C02 !important;
+  border-width: 1px !important;
+}
+
+.MuiInputLabel-root{
+  -webkit-transform: translate(16px, 19px) scale(1) !important;
+  -moz-transform: translate(16px, 19px) scale(1) !important;
+  -ms-transform: translate(16px, 19px) scale(1) !important;
+  font-size: 14px;
+
+}
+
+.MuiInputLabel-root.Mui-focused, .MuiInputLabel-root.MuiFormLabel-filled{
+  left: 0;
+  top: 0px;
+  -webkit-transform: translate(16px, 8px) scale(1) !important;
+  -moz-transform: translate(16px, 8px) scale(1) !important;
+  -ms-transform: translate(16px, 8px) scale(1) !important;
+  font-size: 14px;
+
+}
+
+.MuiInputLabel-root.Mui-focused{
+  color: #FC4C02 !important;
+
+}
+
+.MuiOutlinedInput-input {
+  height: auto ;
+  min-height: 1.4375em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: start;
+  padding-top: 25px !important;
+  padding-bottom: 10px !important;
+  font-size: 16px !important;
+  padding-left: 16px !important;
+  color: #181A36 !important;
+  font-family: "AvertaStandard-Semibold" !important;
+}
+
+@media (max-width: 800px){
+  .MuiOutlinedInput-input {
+    font-size: 14px !important;
+  }
+}
+
+
+.root-custom-tooltip .ttptitle img{
+  vertical-align: middle;
+}
+
+.root-custom-tooltip .ttptitle span{
+  vertical-align: middle;
+  font-size: 18px;
+  color: black;
+}
+
+.root-custom-tooltip .ttpbody {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #5E5F73;
+}
+
+
+
+.input_custom_group.disabled  {
+  background-color: #FAFBFB !important;
+  color: #BABBC3;
+
+}
+
+.input_custom_group.disabled input{
+  color: #BABBC3 !important;
+}
+
+.input_custom_group.disabled label {
+  color: #BABBC3 !important;
+}
+
+
+.MuiMenuItem-root{
+  color: #181A36 !important;
+  font-family: 'AvertaStandard-Regular' !important;
+
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  padding-left: 16px !important;
+}
+
+.MuiMenuItem-root:hover{
+  background-color: #FCF1ED !important;
+  color: #181A36 !important;
+  font-family: 'AvertaStandard-Regular' !important;
+}
+
+.MuiMenuItem-root.Mui-selected{
+  background-color: #faede8 !important;
+}
